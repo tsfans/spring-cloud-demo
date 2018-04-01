@@ -1,0 +1,15 @@
+spring:
+  # 开启消息跟踪
+  cloud.bus.trace.enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+  application:
+    name: service-some
+server:
+  port: 8003
+eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+feign.hystrix.enabled: true
+management.security.enabled: false

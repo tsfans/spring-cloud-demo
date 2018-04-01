@@ -1,0 +1,15 @@
+spring:
+  # 开启消息跟踪
+  cloud.bus.trace.enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+  application:
+    name: service-person
+server:
+  port: 8002
+eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+# 刷新时，关闭安全验证
+management.security.enabled: false

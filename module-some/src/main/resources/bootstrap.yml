@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: config
+      profile: prod
+      discovery:
+        service-id: service-config
+      
