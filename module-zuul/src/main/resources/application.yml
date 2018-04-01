@@ -1,0 +1,20 @@
+spring:
+  zipkin:
+    base-url: http://localhost:8004
+  sleuth:
+    sampler:
+      percentage: 1.0
+  application:
+    name: service-zuul
+server:
+  port: 8080
+eureka:
+  client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+  instance.instance-id: ${spring.application.name}:${server.port}
+# 开启路由重试
+zuul:
+  retryable: true
+ribbon:
+  MaxAutoRetries: 2
+  MaxAutoRetriesNextServer: 0
+  

@@ -15,7 +15,9 @@ spring:
           search-locations: classpath:/config
 server:
   port: 8001
-eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+eureka:
+  client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+  instance.instance-id: ${spring.application.name}:${server.port}
 management:
   security: 
     enabled: false

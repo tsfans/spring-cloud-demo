@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class SpringCloudEurekaApplicationTest 
+public class EurekaApplicationTest 
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class SpringCloudEurekaApplicationTest
      *
      * @param testName name of the test case
      */
-    public SpringCloudEurekaApplicationTest( String testName )
+    public EurekaApplicationTest( String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class SpringCloudEurekaApplicationTest
      */
     public static Test suite()
     {
-        return new TestSuite( SpringCloudEurekaApplicationTest.class );
+        return new TestSuite( EurekaApplicationTest.class );
     }
 
     /**

@@ -1,4 +1,9 @@
 spring:
+  zipkin:
+    base-url: http://localhost:8004
+  sleuth:
+    sampler:
+      percentage: 1.0
   # 开启消息跟踪
   cloud.bus.trace.enabled: true
   rabbitmq:
