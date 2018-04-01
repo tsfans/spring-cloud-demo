@@ -10,6 +10,6 @@ spring:
     name: service-person
 server:
   port: 8002
-eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
 # 刷新时，关闭安全验证
 management.security.enabled: false
+eureka.instance.instance-id: ${spring.application.name}:${server.port}
